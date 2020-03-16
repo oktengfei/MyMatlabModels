@@ -7,6 +7,7 @@ Version: v0.1
 ### 模块说明:
 dh_mat.m 			描述了标准DH建模方法和Craig版建模方法及对应的转换矩阵。
 quaternion.m	描述了Matlab下四元数的一些计算操作。
+AttitudeMat.m	姿态转换矩阵推导，基本的欧拉旋转，使用不同转序推导转换矩阵。
 
 ### 更新历史：
 2020.02.27: <div>
