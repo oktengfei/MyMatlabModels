@@ -6,7 +6,7 @@ clc; clear; close all;
 % 网上可以交互的视频，用于理解四元数：https://eater.net/quaternions
 
 %% 基本运算
-p = [1,2,3,4];  % 定义一个四元数
+p = [1,2,3,4];      % 定义一个四元数
 quatmod(p);          % 计算四元数的 模
 quatnorm(p);         % 计算四元数的 范数
 quatnormalize(p);    % 四元数单位化
