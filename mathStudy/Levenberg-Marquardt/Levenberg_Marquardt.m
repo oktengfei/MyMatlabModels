@@ -3,12 +3,13 @@
 clear;
 close all;
 
-load ax
-load ay
-load az
+load('accData');
+ax = AccData(:,1);
+ay = AccData(:,2);
+az = AccData(:,3);
 
 %迭代次数
-N=17;
+N=100;
 
 %传感器数据个数
 acqSize=2000;
@@ -126,7 +127,7 @@ for h=1:acqSize
         value_yb(h)=temp2;
 end
 
-plot(value_wb,'k')
+plot(value_wb,'r')
 hold on
 plot(value_yb,'b')
 grid on
@@ -139,6 +140,10 @@ S1=norm(s1(N));
 S2=norm(s2(N));
 S3=norm(s3(N));
 
+B1=norm(b1(N));
+B2=norm(b2(N));
+B3=norm(b3(N));
+
 T1
 T2
 T3
@@ -146,3 +151,7 @@ T3
 S1
 S2
 S3
+
+B1
+B2
+B3
